@@ -11,7 +11,7 @@ lockerr=`grep 失败 main.log | wc -l`
 cont="监控报警,左侧运行次数 $ltimes \n右侧运行次数 $ltimes \n解锁异常数\n$unlockerr \n上锁异常数\n$lockerr\n"
 # echo $cont
 # ip=$(hostname -i)
-apiurl="https://oapi.dingtalk.com/robot/send?access_token=d8d543629f0a91f4829a16d7ac4f4b73af0310b66a1a8c0cc43ef9eb4ff15674"
+apiurl="https://oapi.dingtalk.com/robot/send?access_token=xxxxxx"
 # echo $runevn $ip
 curl ${apiurl} -X POST -H "Content-Type:application/json" -d "
 {
